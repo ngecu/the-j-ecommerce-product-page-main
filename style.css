@@ -1,0 +1,251 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: hsl(223, 64%, 98%);
+}
+body .main {
+  margin: 10% 0;
+}
+
+p {
+  font-size: 16px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: solid 1px hsl(220, 14%, 75%);
+}
+.navbar a {
+  color: hsl(0, 0%, 0%);
+}
+
+.logo img {
+  max-height: 40px;
+}
+
+.menu-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.menu-list li {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-list li a {
+  text-decoration: none !important;
+  color: hsl(220, 14%, 75%);
+  transition: border-bottom 0.3s ease-in-out;
+}
+
+.menu-list li a:hover {
+  border-bottom: 2px solid orange;
+  text-decoration: none !important;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user a {
+  margin-left: 15px;
+}
+
+.user img {
+  max-width: 30px;
+}
+
+.outer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+.outer-container .product-image-container {
+  width: 50%;
+}
+.outer-container .product-image-container img {
+  width: 100%;
+}
+.outer-container .show-image img {
+  border-radius: 10px;
+}
+.outer-container .image-chooser {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.outer-container .image-chooser .image-1 img {
+  opacity: 0.7;
+  border: 2px solid #FF5733;
+}
+.outer-container .image-chooser div {
+  flex: 1;
+}
+.outer-container .image-chooser img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.outer-container .image-chooser img:hover {
+  cursor: pointer;
+}
+
+.product-description-container h3 {
+  color: hsl(26, 100%, 55%);
+}
+.product-description-container h1 {
+  font-size: 60px;
+}
+.product-description-container p {
+  color: hsl(220, 14%, 75%);
+}
+
+.price-tag-container .current-price-container {
+  display: flex;
+}
+.price-tag-container .discount {
+  background-color: hsl(26, 100%, 55%);
+  color: hsl(25, 100%, 94%);
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("") no-repeat right center;
+}
+
+.cart-adjustment-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.cart-adjuster-container {
+  display: flex;
+  align-items: center;
+}
+
+.minus-container,
+.cart-item-container,
+.plus-container {
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+button img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.cart {
+  display: flex;
+  gap: 1%;
+}
+.cart .adjuster {
+  padding: 2%;
+  background-color: hsl(223, 64%, 98%);
+  width: 20%;
+  display: flex;
+  border-radius: 10px;
+}
+.cart .add-btn {
+  width: 50%;
+  flex-grow: 1;
+}
+.cart .add-btn button {
+  width: 100%;
+}
+
+.quantity {
+  font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  width: 50px;
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.price-tag {
+  padding: 10px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.discount-badge {
+  background-color: hsl(25, 100%, 94%);
+  color: hsl(26, 100%, 55%);
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.cancelled-price {
+  font-size: 16px;
+  text-decoration: line-through;
+  color: #999;
+}
+
+.add-to-cart-button {
+  background-color: hsl(26, 100%, 55%);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  height: 100%;
+}
+.add-to-cart-button svg {
+  color: white;
+}
+
+.quantity {
+  width: 20%;
+}
+
+.quantity::-webkit-inner-spin-button,
+.quantity::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;600;700&display=swap">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -15,30 +16,151 @@
   </style>
 </head>
 <body>
-
-  Collections
-  Men
-  Women
-  About
-  Contact
-
-  Sneaker Company
-
-  Fall Limited Edition Sneakers
-
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="container">
+  <nav class="navbar">
+    <div style="display: flex; gap: 20%;">
+    <div class="logo">
+         <b>Sneakers</b> 
+    </div>
+    <ul class="menu-list">
+     
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
   </div>
+    <div class="user">
+        <a href="#"><img src="images/icon-cart.svg" alt="Cart Icon"></a>
+        <a href="#"><img src="images/image-avatar.png" alt="Profile Image"></a>
+    </div>
+</nav>
+<div class="main">
+  <div class="outer-container">
+    <div class="product-image-container">
+      <div class="show-image">
+        <img src="images/image-product-1.jpg" alt="">
+      </div>
+      <div class="image-chooser">
+        <div class="image-1">
+          <img src="images/image-product-1.jpg" alt="">
+        </div>
+
+        <div class="image-2">
+          <img src="images/image-product-2.jpg" alt="">
+        </div>
+
+        <div class="image-3">
+          <img src="images/image-product-3.jpg" alt="">
+        </div>
+
+        <div class="image-4">
+          <img src="images/image-product-3.jpg" alt="">
+        </div>
+
+      </div>
+    </div>
+    <div class="product-details-container">
+      <div class="product-description-container">
+        <h3>SNEAKER COMPANY</h3>
+        <h1 style="margin: 10px 0;">Fall Limited Edition Sneakers</h1>
+        <p>  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        
+        </p>
+      </div>
+
+      <!-- <div class="price-tag-container">
+        <div class="current-price-container">
+          <div> 
+            <h2>
+            <b>$125.00</b> 
+          </h2>
+          </div>
+          <div class="discount">
+            <h2>
+            <span>
+              50%
+            </span>
+          </h2>
+          </div>
+        </div>
+
+        <div class="previous-price-container">
+          <del>
+            $250.00
+          </del>
+          
+        </div>
+       
+      </div> -->
+
+      <div class="price-tag">
+        <span class="price">$125.00</span>
+        <span class="discount-badge"> <b> 50% </b></span>
+        <br>
+        <span class="cancelled-price">$250.00</span>
+    </div>
+
+      <!-- <div class="cart-adjustment-container">
+        <div class="cart-adjuster-container">
+            <div class="minus-container">
+                <button>
+                    <img src="images/icon-minus.svg" alt="">
+                </button>
+            </div>
+            <div class="cart-item-container">
+                <select id="number" name="number">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="plus-container">
+                <button>
+                    <img src="images/icon-plus.svg" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="add-button-container">
+            <button>
+                <img src="images/icon-cart.svg" alt=""> Add to Cart
+            </button>
+        </div>
+    </div> -->
+    
+
+    <div class="cart">
+      <div class="adjuster">
+        <button id="decrement">
+          <img src="images/icon-minus.svg" alt="">
+        </button>
+        <div class="quantity">0</div>
+        <button id="increment">
+          <img src="images/icon-plus.svg" alt="">
+
+        </button>
+      </div>
+     <div class="add-btn">
+      <button id="addToCart" class="add-to-cart-button"> <img src="images/icon-cart.svg" alt=""> Add to Cart</button>
+     </div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+</div>
 </body>
 </html>
